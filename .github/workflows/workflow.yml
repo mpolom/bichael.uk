@@ -5,7 +5,7 @@ on:
       - main
 
 permissions:
-  contents: read
+  contents: write    # needs write to push gh-pages
   pages: write
   id-token: write
 
@@ -17,6 +17,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          persist-credentials: true
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -29,6 +30,12 @@ jobs:
       - name: Build site
         run: npm run build
 
+      - name: Show build output (diagnostic)
+        run: |
+          echo "dist exists?"; ls -la dist || true
+          echo "Top files in dist:"; find dist -maxdepth 2 -type f -print | sed -n '1,200p'
+          echo "git remote and status (diagnostic)"; git remote -v || true
+          
       - name: Configure git user (prevents some git errors)
         run: |
           git config --global user.name "github-actions[bot]"
