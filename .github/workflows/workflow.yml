@@ -1,5 +1,4 @@
 name: Build and deploy 11ty site to GitHub Pages
-
 on:
   push:
     branches:
@@ -11,11 +10,13 @@ permissions:
   id-token: write
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Use Node.js
         uses: actions/setup-node@v4
@@ -26,27 +27,16 @@ jobs:
         run: npm ci
 
       - name: Build site
-        run: npm run build
+        run: npm run build     # ensure this writes to ./dist
 
       - name: Upload Pages artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-pages-artifact@v1
         with:
-          name: site
           path: ./dist
 
   deploy:
-    needs: build
+    needs: build-and-deploy
     runs-on: ubuntu-latest
     steps:
-      - name: Download site artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: site
-          path: ./site
-
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          branch: gh-pages        # The branch the action should deploy to
-          folder: site           # The folder (from download) to publish
-          token: ${{ secrets.GITHUB_TOKEN }}
+        uses: actions/deploy-pages@v1
