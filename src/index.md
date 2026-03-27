@@ -14,6 +14,8 @@ Co-founder of [Colchester Bike Kitchen](https://colchesterbikekitchen.org.uk)
 
 I live in Colchester with my wife and twin daughters.
 
+I have over 15 years' experience working in the third and public sectors, delivering projects to make a difference to where we all live, work and play. Some of these are active travel related, some not. I'd love to offer advice and consultation to people who want to do the same thing. Please get in touch.
+
 ## Extra Curricular
 I do these for fun.
 
