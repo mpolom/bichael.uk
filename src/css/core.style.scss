@@ -16,14 +16,21 @@ $y-medium: 1.0rem;
 
 // Placeholders
 %link-default {
-    color: $red;
+    background: linear-gradient(to bottom, $red 0%, $red 100%);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 1.5px 1.5px;
+    color: $black;
     text-decoration: none;
     & * {
         color: $red;
     }
     &:hover {
-        color: $red;
-        text-decoration: underline;
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23CF3E2D' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+        background-position: 0 100%;
+        background-size: auto 3px;
+        background-repeat: repeat-x;
+        text-decoration: none;
     }
 }
 %link-dark {
@@ -56,14 +63,18 @@ $y-medium: 1.0rem;
         "YTLC" 500;
 }
 
+em {
+    font-style: italic;
+}
+
 hr {
     margin-top: 1rem;
-  margin-bottom: 1rem;
-  border: 0;
+    margin-bottom: 1rem;
+    border: 0;
     border-top-width: 0px;
     border-top-style: none;
     border-top-color: currentcolor;
-  border-top: 1px solid rgba(0,0,0,.1);
+    //border-top: 1px  dashed $red;
 }
 .icon {
     width: 1em;
@@ -132,10 +143,11 @@ hr {
     }
     ul {
         list-style: inside;
-        padding-left: 2rem;
+        padding-left: 0;
         & > li {
-            list-style-position: outside;
-            margin-left: 1em;
+            list-style: none;
+            margin-left: 0;
+            margin-bottom: 0.6em;
         }
     }
     .container > ul, .footnotes > ul {
@@ -184,7 +196,10 @@ hr {
 }
 #footer {
     a {
-        @extend %link-dark;
+        background-image: none;
+        &:hover {
+            background-image: none;
+        }
     }
     text-align: center;
 }

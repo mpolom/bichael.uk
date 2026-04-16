@@ -1,23 +1,30 @@
 #content a {
-  color: #CF3E2D;
+  background: linear-gradient(to bottom, #CF3E2D 0%, #CF3E2D 100%);
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 1.5px 1.5px;
+  color: #222222;
   text-decoration: none;
 }
 #content a * {
   color: #CF3E2D;
 }
 #content a:hover {
-  color: #CF3E2D;
-  text-decoration: underline;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23CF3E2D' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: 0 100%;
+  background-size: auto 3px;
+  background-repeat: repeat-x;
+  text-decoration: none;
 }
 
-#footer a, #content .site-name {
+#content .site-name {
   color: #222222;
   text-decoration: none;
 }
-#footer a *, #content .site-name * {
+#content .site-name * {
   color: #222222;
 }
-#footer a:hover, #content .site-name:hover {
+#content .site-name:hover {
   color: #222222;
   text-decoration: underline;
 }
@@ -38,6 +45,10 @@
   font-variation-settings: "wdth" 100, "YTLC" 500;
 }
 
+em {
+  font-style: italic;
+}
+
 hr {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -45,7 +56,6 @@ hr {
   border-top-width: 0px;
   border-top-style: none;
   border-top-color: currentcolor;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .icon {
@@ -120,11 +130,12 @@ hr {
 }
 #content ul {
   list-style: inside;
-  padding-left: 2rem;
+  padding-left: 0;
 }
 #content ul > li {
-  list-style-position: outside;
-  margin-left: 1em;
+  list-style: none;
+  margin-left: 0;
+  margin-bottom: 0.6em;
 }
 #content .container > ul, #content .footnotes > ul {
   padding-left: 0;
@@ -165,6 +176,12 @@ hr {
   font-size: 2rem;
 }
 
+#footer a {
+  background-image: none;
+}
+#footer a:hover {
+  background-image: none;
+}
 #footer {
   text-align: center;
 }
