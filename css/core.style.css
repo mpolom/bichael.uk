@@ -1,18 +1,7 @@
-/* inconsolata-regular - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Inconsolata";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../css/fonts/inconsolata-v37-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* inconsolata-600 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Inconsolata";
-  font-style: normal;
-  font-weight: 600;
-  src: url("../css/fonts/inconsolata-v37-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  font-family: "NunitoSans";
+  src: url("../css/fonts/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 #content a {
   color: #CF3E2D;
@@ -46,7 +35,7 @@
 
 * {
   color: #222222;
-  font-family: "Inconsolata";
+  font-family: "NunitoSans";
   font-size: 16pt;
   line-height: 1.2;
 }
