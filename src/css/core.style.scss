@@ -1,9 +1,3 @@
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'NunitoSans';
-  src: url('../css/fonts/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
 // Sizes
 $max-width: 750px;
 $avatar-size: 90px;
@@ -13,7 +7,7 @@ $black: #222222;
 $red: #CF3E2D;
 
 // Font
-$font-family: "NunitoSans";
+$font-family: "Nunito Sans", sans-serif;
 $font-size: 16pt;
 
 // Margins
@@ -55,6 +49,11 @@ $y-medium: 1.0rem;
     font-family: $font-family;
     font-size: $font-size;
     line-height: 1.2;
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-variation-settings:
+        "wdth" 100,
+        "YTLC" 500;
 }
 
 hr {
@@ -76,6 +75,12 @@ hr {
     margin: 0 auto;
 }
 
+.callout {
+    width: 100%;
+    margin-top: $y-small;
+    margin-bottom: $y-small;
+}
+
 #content {
     display: block;
 
@@ -87,7 +92,7 @@ hr {
     }
     h1, h2, h3, h4, h5, h6 {
         font-size: medium;
-        font-weight: bold;
+        font-weight: 700;
         margin: $y-medium 0 $y-small 0;
     }
     @for $i from 1 through 4 {
