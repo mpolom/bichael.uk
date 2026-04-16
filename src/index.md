@@ -3,8 +3,6 @@ title: Michael Polom - Bike Idiot
 layout: base.njk
 ---
 
-
-
 **Bike Idiot.**
 
 *"active travel behaviour change professional"*  

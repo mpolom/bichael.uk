@@ -1,10 +1,11 @@
 import path from "node:path";
 import * as sass from "sass";
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
+import eleventyGoogleFonts from "eleventy-google-fonts";
 
 export default async function(eleventyConfig) {
-    eleventyConfig.addPassthroughCopy("src/css/core.style.css");
-
+    eleventyConfig.addPlugin(eleventyGoogleFonts);
+	eleventyConfig.addPassthroughCopy("src/css/core.style.css");
     eleventyConfig.addExtension("scss", {
 		outputFileExtension: "css",
 
