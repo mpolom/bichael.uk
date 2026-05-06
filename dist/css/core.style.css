@@ -2,7 +2,7 @@
   background: linear-gradient(to bottom, #CF3E2D 0%, #CF3E2D 100%);
   background-position: 0 100%;
   background-repeat: repeat-x;
-  background-size: 1.5px 1.5px;
+  background-size: 3px 3px;
   color: #222222;
   text-decoration: none;
 }
@@ -43,6 +43,10 @@
   font-style: normal;
   font-optical-sizing: auto;
   font-variation-settings: "wdth" 100, "YTLC" 500;
+}
+
+body {
+  background-color: #fdfbf3;
 }
 
 em {

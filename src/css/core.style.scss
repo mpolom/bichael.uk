@@ -5,6 +5,8 @@ $avatar-size: 90px;
 // Colors
 $black: #222222;
 $red: #CF3E2D;
+$off-white: #fdfbf3;
+$off-cream: #f9f4e3;
 
 // Font
 $font-family: "Nunito Sans", sans-serif;
@@ -61,6 +63,10 @@ $y-medium: 1.0rem;
     font-variation-settings:
         "wdth" 100,
         "YTLC" 500;
+}
+
+body {
+background-color: $off-white;
 }
 
 em {
