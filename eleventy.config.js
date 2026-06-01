@@ -4,6 +4,8 @@ import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 
 export default async function(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("src/css/core.style.css");
+	eleventyConfig.addPassthroughCopy("src/css/fonts.bundle.css");
+	eleventyConfig.addPassthroughCopy({'./node_modules/@fontsource-variable/geist/files/*.woff2': 'css/files'})
     eleventyConfig.addExtension("scss", {
 		outputFileExtension: "css",
 
@@ -32,7 +34,6 @@ export default async function(eleventyConfig) {
 			};
 		},
 	});
-	eleventyConfig.addPassthroughCopy("src/css/fonts");
 	eleventyConfig.addPassthroughCopy("src/images");
 	eleventyConfig.addPlugin(eleventyImageTransformPlugin);
 	eleventyConfig.addTemplateFormats("scss")
