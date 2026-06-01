@@ -28,7 +28,7 @@ jobs:
         run: npm ci
 
       - name: Build site
-        run: npm run build
+        run: npx rollup --bundleConfigAsCjs -c && npx @11ty/eleventy
 
       - name: Show build output (diagnostic)
         run: |
