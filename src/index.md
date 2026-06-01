@@ -52,7 +52,7 @@ If you'd like to pay me to do anything like this for *you*, slide into my DMs.
 
 - [Colchester Cycling Campaign](https://www.colchester-cycling.org.uk)  
 - [Re~Cycle, Bikes to Africa](https://re-cycle.org/)  
-- [Colchester Bike Jumble](http://colchbk.org.uk/jumble)  
+- [Colchester Bike Jumble](https://www.facebook.com/colchesterbikejumble/)
 - [The Waiting Room](https://www.instagram.com/stbotolphs_/)  
 - [Blackwater Polytechnic](https://blackwaterpolytechnic.com/)  
 - [Creative Co-op](https://creative.coop)  
