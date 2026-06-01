@@ -37,16 +37,17 @@
 
 * {
   color: #222222;
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 16pt;
-  line-height: 1.2;
+  font-family: "Geist Variable", sans-serif;
+  font-size: 14pt;
+  line-height: 1.6;
   font-style: normal;
+  font-weight: 300;
   font-optical-sizing: auto;
   font-variation-settings: "wdth" 100, "YTLC" 500;
 }
 
 body {
-  background-color: #fdfbf3;
+  background-color: rgb(242, 242, 242);
 }
 
 em {
@@ -60,6 +61,10 @@ hr {
   border-top-width: 0px;
   border-top-style: none;
   border-top-color: currentcolor;
+}
+
+strong {
+  font-weight: 600;
 }
 
 .icon {
@@ -87,7 +92,7 @@ hr {
 }
 #content h1, #content h2, #content h3, #content h4, #content h5, #content h6 {
   font-size: medium;
-  font-weight: 700;
+  font-weight: 600;
   margin: 1rem 0 0.6rem 0;
 }
 #content h1 {
