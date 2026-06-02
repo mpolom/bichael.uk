@@ -1,6 +1,7 @@
 import path from "node:path";
 import * as sass from "sass";
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
+import markdownIt from "markdown-it";
 
 export default async function(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("src/css/core.style.css");
@@ -37,6 +38,9 @@ export default async function(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("src/images");
 	eleventyConfig.addPlugin(eleventyImageTransformPlugin);
 	eleventyConfig.addTemplateFormats("scss")
+	let options = {
+		html: true,
+	};
 };
 
 // This named export is optional
