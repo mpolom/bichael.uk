@@ -7,7 +7,7 @@ layout: base.njk
 
 I've over 15 years' experience across local government, the third sector and grassroots organising, I bring practical experience in behaviour change, stakeholder engagement, project management, travel planning, and community-led projects.
 
-I'm available for freelance consultation. If you're trying to get more people on bikes, shift how your organisation thinks about travel, or make the case for investment in active travel infrastructure, I'd love to help. [Get in touch](#).
+I'm available for freelance consultation. If you're trying to get more people on bikes, shift how your organisation thinks about travel, or make the case for investment in active travel infrastructure, I'd love to help. [Get in touch]({{ site.linkedin_url }}).
 
 ## Work with me
 
@@ -20,7 +20,7 @@ I can help with:
 
 I'm particularly useful to local authorities, charities, and community organisations who need someone who's done the thing rather than just advised on it.
 
-[I'd love to hear from you](#)
+[I'd love to hear from you]({{ site.linkedin_url }})
 
 ## Past work
 
@@ -35,4 +35,4 @@ Various things i've done in the past and organisations i've worked with/for. Som
   - [Good For Nothing Colchester](https://www.goodfornothing.com/) - organised hack-day events supporting local charities and social enterprises
   - [Colchester Bike Jumble](https://www.facebook.com/colchesterbikejumble/), [Blackwater Polytechnic](https://blackwaterpolytechnic.com/), [The Waiting Room](https://www.instagram.com/stbotolphs_/), [Colchester ALLEYCAT](https://chapeauvelo-blog.tumblr.com/post/82090239127/alleycat-klaxon)
 
-If you'd like to pay me to do something like this for you, please [get in touch](#).
+If you'd like to pay me to do something like this for you, please [get in touch]({{ site.linkedin_url }}).
