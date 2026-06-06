@@ -1,5 +1,6 @@
 @use "sass:map";
 @use "fonts.bundle.css";
+@use "sass:color";
 
 // Sizes
 $max-width: 750px;
@@ -176,7 +177,7 @@ form {
             border-radius: 4px;
             cursor: pointer;
             &:hover {
-                background-color: darken($green, 10%);
+                background-color: color.adjust($green, $lightness: 10%);
             }
         }
     }
