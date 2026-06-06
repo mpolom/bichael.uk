@@ -1,6 +1,13 @@
-<div class="container">
-  <div class="item">
+
+<header>
+  <div class="container grid two">
+    <div class="intro">
       <h1>{{site.name}}</h1>
+        {% renderFile "./src/intro.md" %}
+    </div>
+    <div class="photo">
+        <img src="/images/me.webp" alt="Photo of me" class="round">
+    </div>
   </div>
-</div>
-<hr>
+  <hr>
+</header>

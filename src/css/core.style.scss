@@ -1,3 +1,4 @@
+@use "sass:map";
 @use "fonts.bundle.css";
 
 // Sizes
@@ -20,6 +21,28 @@ $font-size: 14pt;
 $y-small: 0.6rem;
 $y-medium: 1.0rem;
 
+// Media queries
+$breakpoints: (
+  phone-sm: 420px,
+  phone: 767px,
+  tablet: 768px,
+  tablet-lg: 1024px,
+  desktop: 1025px,
+  desktop-lg: 1600px
+  );
+
+@mixin for-size($breakpoint) {
+    // If the breakpoint exists in the map.
+    @if map.has-key($breakpoints, $breakpoint) {
+        // Get the breakpoint value.
+        $breakpoint-value: map.get($breakpoints, $breakpoint);
+
+        //Build the media query
+        @media (max-width: $breakpoint-value) {
+            @content;
+        }
+    } 
+}
 // Placeholders
 %link-default {
     text-decoration: $purple-20 0.2em underline;
@@ -96,6 +119,7 @@ mark {
 strong {
     font-weight: 600;
 }
+
 .icon {
     width: 1em;
     height: 1em;
@@ -104,6 +128,17 @@ strong {
 .container {
     max-width: $max-width;
     margin: 0 auto;
+}
+.grid {
+    display: grid;
+    column-gap: 1rem;
+    &.two {
+        grid-template-columns: 2fr 1fr;
+    }
+    * {
+        max-width:100%;
+        height: auto;
+    }
 }
 
 .callout {
@@ -121,7 +156,7 @@ strong {
     p {
         margin-bottom: $y-small;
     }
-    h1, h2, h3, h4, h5, h6 {
+    h1, h2, h3, h4, h5 {
         background-color: $purple-20;
         color: $green;
         display: inline-block;
@@ -129,6 +164,13 @@ strong {
         font-size: medium;
         font-weight: 600;
         margin: $y-medium 0 $y-small 0;
+    }
+    h6 {
+        font-size: 1rem;
+        font-weight: 300;
+        margin: $y-medium 0 $y-small 0;
+        border-left: 4px solid $purple-20;
+        padding-left: 0.5em;
     }
     @for $i from 1 through 4 {
         h#{$i} {
@@ -139,13 +181,9 @@ strong {
         display: block;
         margin: $y-medium auto;
         max-width: 100%;
-    }
-    .avatar > img {
-        border-radius: 50%;
-        float: right;
-        margin: -8px 0 0 16px;
-        height: $avatar-size;
-        width: $avatar-size;
+        &.round {
+            border-radius: 50% 2% 50% 2%;
+        }
     }
     ol {
         counter-reset: list;
@@ -166,12 +204,14 @@ strong {
         padding-left: 0;
     }
     ul {
-        list-style: inside;
+        list-style: none;
         padding-left: 0;
         & > li {
             list-style: none;
             margin-left: 0;
-            margin-bottom: 0.6em;
+            margin-bottom: 2em;
+            border-left: 4px solid $purple-20;
+            padding-left: 0.5em;
         }
     }
     .container > ul, .footnotes > ul {
@@ -213,19 +253,22 @@ strong {
             padding: 8px 8px;
         }
     }
+    .photo {
+        @include for-size(tablet) {
+            display: none;
+        }
+    }
     .site-name {
     @extend %link-dark;
     font-size: 2rem;
 }
 }
-#footer{
-    a * {
-        color: $black;
-    }
-    a {
-        text-decoration: none;
+footer {
+    a, a * {
+        color: $black !important;
+        text-decoration: none !important;
         &:hover {
-            background: none;
+            background: none !important;
         }
     }
     text-align: center;

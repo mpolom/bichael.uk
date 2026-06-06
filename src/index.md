@@ -3,57 +3,36 @@ title: Michael Polom - Bike Idiot
 layout: base.njk
 ---
 
-**Bike Idiot.**
+###### I help local authorities, charities and community organisations get more people cycling and walking, for work, play and life.
 
-*"active travel behaviour change professional"*  ([My day job](https://www.linkedin.com/in/michaepolom/))
+I've over 15 years' experience across local government, the third sector and grassroots organising, I bring practical experience in behaviour change, stakeholder engagement, project management, travel planning, and community-led projects.
 
-Co-founder of [Colchester Bike Kitchen](https://colchesterbikekitchen.org.uk)
+I'm available for freelance consultation. If you're trying to get more people on bikes, shift how your organisation thinks about travel, or make the case for investment in active travel infrastructure, I'd love to help. [Get in touch](#).
 
-I live in Colchester with my wife and twin daughters.
+## Work with me
 
-I have over 15 years' experience working in the third and public sectors, <mark>delivering projects to make a difference to where we all live, work and play</mark>. Some of these are active travel related, some not. I'd love to offer advice and consultation to people who want to do the same thing. Please get in touch.
+I can help with:
+- Behaviour change & active travel programmes — designing and delivering projects that get people walking and cycling, not just building the infrastructure and hoping for the best
+- Workplace travel planning — I ran Colchester's Travel Plan Club for seven years, working with 20+ businesses and organisations to reduce car dependency and navigate the practicalities
+- Community engagement — running meaningful consultation that actually shapes outcomes, not just ticks a box
+- Funding bids & project management — I've secured and managed DEFRA-funded projects; I know how to write for funders and deliver on what you promise
+- Cycle mapping & wayfinding — I led the community-focused redesign of the Colchester cycle map; I understand how to balance user needs, design, and political constraints
 
-## Extra Curricular
+I'm particularly useful to local authorities, charities, and community organisations who need someone who's done the thing rather than just advised on it.
 
-I do these for fun.
-
-### Colchester Bike Kitchen
-
-I founded CBK in 2015 with Pam Nelson and Stuart Welham (both sadly no longer with us) with the aim of providing a service where people could learn to look after their own bikes, or make use of tools they may not own themselves. CBK is now run by a small steering committee, still keeping to our original mission of empowering people with the confidence and knowledge to keep riding their bike.
-
-Since then CBK has become bigger than we'd have ever dared to dream, open twice a week and staffed by 20 volunteers. We have a large city centre workshop stocked with amazing tools, offer bi-weekly drop-in sessions and regular classes - we are totally rushed off our feet!
-
-[Somehow this is still just a hobby](https://colchesterbikekitchen.org.uk).
-
----
-
-### ColVelo Cycling Club
-
-My chosen local cycling club. I've been a committee member since 2017 and coordinate ride leaders for our Sunday outings.
-
-I designed the current jersey, and design the prize t-shirts for anyone who finishes our five 'Monument' rides each year.
-
-I've also somehow become the de-facto social secretary; regularly showing races at the local pub with charity sweepstakes. We've raised over £400 for various charities from chucking a few quid in the pot a couple of times of year. [It's nice](http://www.colvelo.co.uk/).
-
----
-
-### Colchester Cycling Charter
-
-In 2019 we created the Charter as a way for residents, businesses, organisations and schools to show their support for the positive benefits cycling can bring to Colchester.
-
-Since then, 52 organisations and over 500 individuals have signed the charter. [You should too](https://colchestercyclingcharter.org.uk/).
-
----
+[I'd love to hear from you](#)
 
 ## Past work
 
 Various things i've done in the past and organisations i've worked with/for. Some for money, some not.
-If you'd like to pay me to do anything like this for *you*, slide into my DMs.
 
-- [Colchester Cycling Campaign](https://www.colchester-cycling.org.uk)  
-- [Re~Cycle, Bikes to Africa](https://re-cycle.org/)  
-- [Colchester Bike Jumble](https://www.facebook.com/colchesterbikejumble/)
-- [The Waiting Room](https://www.instagram.com/stbotolphs_/)  
-- [Blackwater Polytechnic](https://blackwaterpolytechnic.com/)  
-- [Creative Co-op](https://creative.coop)  
-- [Colchester ALLEYCAT](https://chapeauvelo-blog.tumblr.com/post/82090239127/alleycat-klaxon)
+  - [Colchester City Council](https://colchester.gov.uk) - DEFRA-funded air quality projects; developed an eCargo bike app for low-carbon last-mile delivery; redesigned the Colchester cycle map using community-led research.
+  - [Colchester Travel Plan Club](https://colchestertravelplan.club) - coordinated workplace travel planning across 20+ local businesses and organisations for seven years
+  - [Colchester Bike Kitchen](https://colchesterbikekitchen.org.uk) - co-founded in 2015; now a two-days-a-week do-it-together community workshop with 20 volunteers
+  - [Re~Cycle, Bikes to Africa](https://re-cycle.org/) - bicycle refurbishment and Dr Bike servicing at the University of Essex
+  - [Creative Co-op](https://creative.coop) - community engagement and asset mapping in partnership with Locality
+  - [Colchester Cycling Campaign](https://www.colchester-cycling.org.uk) - cycling advocacy and campaign support. Created the Colchester Cycling Charter with 52 signatory organisations and 500+ individual supporters.
+  - [Good For Nothing Colchester](https://www.goodfornothing.com/) - organised hack-day events supporting local charities and social enterprises
+  - [Colchester Bike Jumble](https://www.facebook.com/colchesterbikejumble/), [Blackwater Polytechnic](https://blackwaterpolytechnic.com/), [The Waiting Room](https://www.instagram.com/stbotolphs_/), [Colchester ALLEYCAT](https://chapeauvelo-blog.tumblr.com/post/82090239127/alleycat-klaxon)
+
+If you'd like to pay me to do something like this for you, please [get in touch](#).
