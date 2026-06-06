@@ -1,5 +1,5 @@
 ---
-title: Michael Polom - Bike Idiot
+title: Michael Polom | Active travel behaviour change professional, bike idiot.
 layout: base.njk
 ---
 
