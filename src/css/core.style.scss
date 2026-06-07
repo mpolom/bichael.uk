@@ -135,6 +135,9 @@ strong {
     column-gap: 1rem;
     &.two {
         grid-template-columns: 2fr 1fr;
+        @include for-size(phone) {
+            grid-template-columns: 1fr;
+        }
     }
     * {
         max-width:100%;
@@ -146,41 +149,6 @@ strong {
     width: 100%;
     margin-top: $y-small;
     margin-bottom: $y-small;
-}
-
-form {
-    &.contact {
-        border-left: 4px solid $purple-20;
-        padding-left: 0.5em;
-        display: flex;
-        flex-direction: column;
-        gap: $y-small;
-        margin: 1.6em auto 0;
-        label {
-            display: block;
-        }
-        input, textarea {
-            padding: 0.5em;
-            border: 1px solid #cccccc;
-            border-radius: 4px;
-            font-family: $font-family;
-            font-size: $font-size;
-            width: 100%;
-            max-width: 450px;
-        }
-         button {
-            align-self: flex-start;
-            padding: 0.5em 1em;
-            background-color: $green;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            &:hover {
-                background-color: color.adjust($green, $lightness: 10%);
-            }
-        }
-    }
 }
 
 #content {
@@ -290,7 +258,7 @@ form {
         }
     }
     .photo {
-        @include for-size(tablet) {
+        @include for-size(phone) {
             display: none;
         }
     }
