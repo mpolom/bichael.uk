@@ -3,7 +3,8 @@ import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import eleventySass from "@11tyrocks/eleventy-plugin-sass-lightningcss";
 import bundle from "@11tyrocks/eleventy-plugin-sass-lightningcss";
 import { legacyImgSize, imgSize, obsidianImgSize } from "@mdit/plugin-img-size";
-import { RenderPlugin } from "@11ty/eleventy";
+import {IdAttributePlugin, InputPathToUrlTransformPlugin, HtmlBasePlugin, RenderPlugin } from "@11ty/eleventy";
+import pluginNavigation from "@11ty/eleventy-navigation";
 
 export default async function(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("./src/css/core.style.css");
@@ -16,6 +17,16 @@ export default async function(eleventyConfig) {
 	let options = {
 		html: true,
 	};
+	eleventyConfig.addPreprocessor("drafts", "*", (data, content) => {
+		if (data.draft) {
+			data.title = `${data.title} (draft)`;
+		}
+
+		if(data.draft && process.env.ELEVENTY_RUN_MODE === "build") {
+			return false;
+		}
+	});
+	
 };
 
 // This named export is optional
