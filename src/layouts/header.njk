@@ -1,13 +1,26 @@
 
 <header>
-  <div class="container grid two">
-    <div class="intro">
+  <nav class="container sticky">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/writing/">Writing</a></li>
+      <li><a href="/about/">About</a></li>
+    </ul>
+  </nav>
+  {% if page.url == "/" %}
+    <div class="container grid two">
+      <div class="intro">
+        <h1>{{site.name}}</h1>
+          {% renderFile "./src/intro.md" %}
+      </div>
+      <div class="photo">
+          <img src="/images/me.webp" alt="Photo of me" class="round">
+      </div>
+    </div>
+    <hr>
+  {% else %}
+    <div class="container grid">
       <h1>{{site.name}}</h1>
-        {% renderFile "./src/intro.md" %}
     </div>
-    <div class="photo">
-        <img src="/images/me.webp" alt="Photo of me" class="round">
-    </div>
-  </div>
-  <hr>
+  {% endif %}
 </header>
