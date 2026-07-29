@@ -7,12 +7,11 @@ $max-width: 750px;
 $avatar-size: 90px;
 
 // Colors
-$black: #222222;
-$red: rgba(207, 62, 45, 1);
-$green: #086759;
-$purple-20: rgba(102, 57, 186, 0.2);
-$off-white: rgb(242, 242, 242, 1);
-$off-cream: #fcf8e3;
+$black: #000000;
+//$red: rgba(207, 62, 45, 1);
+$orange: #FF6B35;
+$green: #7FB069;
+$white: #fff;
 
 // Font
 $font-family: "Geist Variable", sans-serif;
@@ -46,29 +45,19 @@ $breakpoints: (
 }
 // Placeholders
 %link-default {
-    text-decoration: $purple-20 0.2em underline;
+    text-decoration: $orange 0.2em underline;
     text-underline-offset: 0.3em;
     color: $black;
     & * {
-        color: $purple-20;
+        color: $orange;
     }
     &:hover {
-        background-color: $purple-20;
-        color: $green;
-        text-decoration: none;
+        //background-color: $green;
+        //color: $orange;
+        text-decoration: $orange wavy underline;
     }
 }
-%link-dark {
-    color: $black;
-    text-decoration: none;
-    & * {
-        color: $black;
-    }
-    &:hover {
-        color: $black;
-        text-decoration: underline;
-    }
-}
+
 %table-cell {
     border: 1px solid #cccccc;
     padding: 6px 12px;
@@ -90,12 +79,12 @@ $breakpoints: (
 }
 
 ::selection {
-    background-color: $purple-20;
-    color: $green;
+    background-color: $green;
+    color: $white;
 }
 
 body {
-    background-color: $off-white;
+    background-color: $white;
 }
 
 em {
@@ -114,8 +103,8 @@ hr {
 
 mark {
     padding: 0 0.2em;
-    background-color: $purple-20;
-    color: $green;
+    background-color: $green;
+    color: $orange;
 }
 strong {
     font-weight: 600;
@@ -126,6 +115,7 @@ strong {
     height: 1em;
     vertical-align: -0.125em;
 }
+
 .container {
     max-width: $max-width;
     margin: 0 auto;
@@ -153,16 +143,67 @@ strong {
 
 #content {
     display: block;
-
-    a {
-        @extend %link-default;
+    .container {
+        a {
+            @extend %link-default;
+        }
+        .container > ol, .footnotes > ol {
+        padding-left: 0;
+        }
+        ul {
+            list-style: none;
+            padding-left: 0;
+            & > li {
+                list-style: none;
+                margin-left: 0;
+                margin-bottom: 2em;
+                border-left: 4px solid $green;
+                padding-left: 0.5em;
+            }
+        }
+        > ul {
+            padding-left: 0;
+        }
+        
+    }
+    nav.container {
+        border-bottom: 1px solid $green;
+        &.sticky {
+            position:sticky;
+            top: 0;
+            z-index:10;
+            display: flex;
+        }
+        & ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            > li {
+                list-style: none;
+                border-left: none;
+                padding-left: 0;
+                margin-bottom:0;
+            }
+            a {
+                @extend %link-default;
+                font-size: 1.2rem;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                    background-color: none;
+                }
+            }
+        }
+    }
+    .footnotes > ul {
+        padding-left: 0;
     }
     p {
         margin-bottom: $y-small;
     }
     h1, h2, h3, h4, h5 {
-        background-color: $purple-20;
-        color: $green;
+        //background-color: $green;
+        color: $orange;
         display: inline-block;
         padding: 0 0.2em;
         font-size: medium;
@@ -173,8 +214,12 @@ strong {
         font-size: 1rem;
         font-weight: 300;
         margin: $y-medium 0 $y-small 0;
-        border-left: 4px solid $purple-20;
+        border-left: 4px solid $green;
         padding-left: 0.5em;
+    }
+    header h1 {
+        font-size: 2rem;
+        font-weight: 600;
     }
     @for $i from 1 through 4 {
         h#{$i} {
@@ -203,23 +248,6 @@ strong {
             text-align: right;
             padding-right: .5em;
         }
-    }
-    .container > ol, .footnotes > ol {
-        padding-left: 0;
-    }
-    ul {
-        list-style: none;
-        padding-left: 0;
-        & > li {
-            list-style: none;
-            margin-left: 0;
-            margin-bottom: 2em;
-            border-left: 4px solid $purple-20;
-            padding-left: 0.5em;
-        }
-    }
-    .container > ul, .footnotes > ul {
-        padding-left: 0;
     }
     table {
         margin: $y-medium auto;
@@ -262,10 +290,6 @@ strong {
             display: none;
         }
     }
-    .site-name {
-    @extend %link-dark;
-    font-size: 2rem;
-}
 }
 footer {
     a, a * {
