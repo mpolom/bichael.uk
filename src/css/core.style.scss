@@ -10,7 +10,7 @@ $avatar-size: 90px;
 $black: #000000;
 //$red: rgba(207, 62, 45, 1);
 $orange: #FF6B35;
-$blue: rgb(0, 78, 137);
+$green: #7FB069;
 $white: #fff;
 
 // Font
@@ -52,7 +52,7 @@ $breakpoints: (
         color: $orange;
     }
     &:hover {
-        //background-color: $blue;
+        //background-color: $green;
         //color: $orange;
         text-decoration: $orange wavy underline;
     }
@@ -79,7 +79,7 @@ $breakpoints: (
 }
 
 ::selection {
-    background-color: $blue;
+    background-color: $green;
     color: $white;
 }
 
@@ -103,7 +103,7 @@ hr {
 
 mark {
     padding: 0 0.2em;
-    background-color: $blue;
+    background-color: $green;
     color: $orange;
 }
 strong {
@@ -157,7 +157,7 @@ strong {
                 list-style: none;
                 margin-left: 0;
                 margin-bottom: 2em;
-                border-left: 4px solid $blue;
+                border-left: 4px solid $green;
                 padding-left: 0.5em;
             }
         }
@@ -167,6 +167,7 @@ strong {
         
     }
     nav.container {
+        border-bottom: 1px solid $green;
         &.sticky {
             position:sticky;
             top: 0;
@@ -201,7 +202,7 @@ strong {
         margin-bottom: $y-small;
     }
     h1, h2, h3, h4, h5 {
-        //background-color: $blue;
+        //background-color: $green;
         color: $orange;
         display: inline-block;
         padding: 0 0.2em;
@@ -213,7 +214,7 @@ strong {
         font-size: 1rem;
         font-weight: 300;
         margin: $y-medium 0 $y-small 0;
-        border-left: 4px solid $blue;
+        border-left: 4px solid $green;
         padding-left: 0.5em;
     }
     header h1 {
