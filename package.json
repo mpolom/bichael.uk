@@ -20,7 +20,7 @@
     "@fontsource-variable/geist": "^5.2.9",
     "@mdit/plugin-img-size": "^0.23.2",
     "markdown-it-attrs": "^5.0.0",
-    "sass": "^1.97.1"
+    "sass": "^1.103.1"
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^16.0.3",
